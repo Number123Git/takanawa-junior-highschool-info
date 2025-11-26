@@ -1,0 +1,59 @@
+/* LINE-Seed-JPの読み込み */
+@font-face {
+    font-family: "LINE-Seed-JP";
+    src: url("font\LINESeedJP\WOFF2\LINESeedJP_OTF_Rg.woff2") format("woff2");
+}
+
+/* 全体のフォントをLINE-Seed-JPに設定 */
+* {
+    font-family: "LINE-Seed-JP", sans-serif;
+}
+
+/* ナビゲーションバーのリンクのホバー時の色を黒に設定 */
+a.navbar-item:hover {
+    color: black;
+}
+
+.important {
+    color: red;
+}
+
+/* スマートフォン表示時のナビゲーションバー調整 */
+@media (max-width: 768px) {
+    .navbar-brand {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-brand a h1 {
+        text-align: center;
+    }
+}
+
+.no-copy {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Standard */
+}
+
+table {
+    padding: 0.75rem;
+}
+
+table th,
+table td {
+    padding: 0.75rem !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table thead th {
+    background-color: #363636;
+    color: white;
+    font-weight: bold;
+}
+
+.table-container {
+    overflow-x: auto;
+}
